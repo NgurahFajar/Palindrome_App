@@ -32,6 +32,7 @@
         android:textSize="18sp"/>
 
     <View
+        android:id="@+id/lines"
         android:layout_width="match_parent"
         android:layout_height="1dp"
         android:layout_marginTop="12dp"
@@ -41,6 +42,55 @@
         app:layout_constraintTop_toBottomOf="@id/tv_title">
     </View>
 
+    <TextView
+        android:id="@+id/tv_welcome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/poppins_regular"
+        android:text="@string/welcome"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/lines"
+        android:layout_margin="16dp"
+        android:textSize="12sp"
+        android:textColor="@color/black"/>
+
+    <TextView
+        android:id="@+id/tv_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/poppins_bold"
+        tools:text="John Doe"
+        app:layout_constraintStart_toStartOf="@id/tv_welcome"
+        app:layout_constraintTop_toBottomOf="@id/tv_welcome"
+        android:textSize="18sp"
+        android:textColor="@color/black"/>
+
+    <TextView
+        android:id="@+id/tv_selected_username"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/poppins_bold"
+        tools:text="Selected User Name"
+        android:textColor="@color/black"
+        android:textSize="24sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"/>
+
+    <Button
+        android:id="@+id/btn_choose_user"
+        android:layout_width="310dp"
+        android:layout_height="51dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginBottom="24dp"
+        app:cornerRadius="12dp"
+        android:backgroundTint="#2B637B"
+        android:fontFamily="@font/poppins_regular"
+        android:text="@string/choose_a_user"
+        android:textAllCaps="false"/>
 
 
 
